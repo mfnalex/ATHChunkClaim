@@ -1,0 +1,79 @@
+#
+# ATHCHUNKCLAIM v1.0
+# by @Gurwi30
+#
+
+Options:
+
+  license: "" # IF YOU DON'T HAVE ONE REQUEST IT ON OUR DISCORD ( https://discord.gg/re93w4JX5d )
+  lang: en_US
+
+  disabled-worlds:
+    - "world-nether"
+
+  need-permission-to-claim: false # IF ENABLED THE PERMISSION IS athchunkclaim.claim
+  max-claims-by-default: 1 # YOU CAN INCREASE IT FOR SOME GROUPS USING THE PERMISSION athchunkclaim.claim.<amount>
+
+  open-empty-player-chunks-gui: false # OPENS THE PLAYER PLOT GUI EAVEN IF THE PLAYER HAS NO CHUNKS
+
+  ### ECONOMY ###
+
+  vault-support: false # IF YOU HAVE VAULT AND WANT TO USE THE ECONOMY SYSTEM ENABLE THIS
+  economy-system:
+    chunk-claim-price: 2000
+
+    custom-sell-price: false # IF IS ENABLE THE PLAYERS CAN SELL THE CHUNK FOR EVERY PRICE THEY WANT
+    chunk-default-sell-price: 1000
+
+  ### WORLDGUARD ###
+
+  worldguard-support: false # ENABLE WORLDGUARD SUPPORT (WILL BE AVAILABLE WITH THE NEXT UPDATE)
+  worldguard:
+
+    use-custom-claim-flag: true
+    claim-global: false
+
+    claimable-regions:  # USE [] TO DISABLE THIS
+      - "RG-NAME1"
+      - "RG-NAME2"
+      - "RG-NAME3"
+
+    non-claimable-regions: # USE [] TO DISABLE THIS
+      - "RG-NAME4"
+      - "RG-NAME5"
+      - "RG-NAME6"
+
+    claim-rg-containing: "plot" # CLAIM ONLY REGIONS WITH CONTAINS THIS TEXT IN THE NAME
+                                # LEAVE THIS EMPTY TO DISABLE IT
+
+
+  ### CLAIMED / UNCLAIMED CHUNKS ACTIONS ###
+
+  disabled-actions:
+    unclaimed-chunks:
+      block-break: true
+      block-place: true
+      interactions: true
+      disable-pvp: false
+
+    claimed-chunks: # ONLY IF WHO INTERACT IS NOT THE OWNER
+      block-break: true
+      block-place: true
+      interactions: true
+      disable-pvp: false
+
+  ### CHUNKS PERMISSIONS ###
+
+  custom-chunk-permissions: false # CHUNK CLAIMERS CAN CHOOSE THEY' RE OWN CUSTOM PERMISSIONS
+                                  # (WILL BE AVAILABLE WITH THE NEXT UPDATE)
+
+  chunks-default-permissions: # CHUNK MEMBERS AND OWNERS (!) THESE ARE NOT THE PLUGIN PERMISSIONS
+    owners:
+      block-break: true
+      block-place: true
+      interact: true
+
+    members:
+      block-break: false
+      block-place: false
+      interact: true

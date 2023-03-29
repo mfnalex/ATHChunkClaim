@@ -1,0 +1,26 @@
+name: ATHChunkClaim
+version: '${project.version}'
+main: me.gurwi.athchunkclaim.ATHChunkClaim
+authors: [ Gurwi30 ]
+api-version: 1.13
+description: Chunk Claim Plugin+
+softdepend:
+  - WorldGuard
+  - Vault
+commands:
+  athchunkclaim:
+    description: Main Command
+    aliases:
+      - chunkclaim
+      - plot
+      - chunk
+
+  athchunkadmin:
+    description: Admin Command
+    aliases:
+      - chunkclaimadmin
+      - plotadmin
+      - chunkadmin
+      - chunka
+      - plota
+      - chunkclaima

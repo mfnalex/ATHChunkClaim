@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>me.gurwi</groupId>
+    <artifactId>ATHChunkClaim-parent</artifactId>
+    <version>1.2.0</version>
+    <packaging>pom</packaging>
+    <name>ATHChunkClaim</name>
+    <description>Chunk Claim Plugin</description>
+    <modules>
+        <module>core</module>
+        <module>dist</module>
+    </modules>
+
+    <repositories>
+
+    </repositories>
+
+    <dependencies>
+
+    </dependencies>
+
+</project>

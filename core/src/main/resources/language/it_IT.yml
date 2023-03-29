@@ -1,0 +1,59 @@
+#
+# ATHChunkClaim v1.0.0
+# By @Gurwi30 (it_IT Language)
+#
+
+Messages:
+
+  Prefix: "&b&lATHChunkClaim &8&l» "
+  No-perms: "&cNon disponi dei permessi neccessari per poter utilizzare questo comando!"
+  No-args: "&7Fai &b/chunk help &7per ottenere la lista di tutti i comandi staff disponibili."
+  Command-not-found: "&cComando non trovato! &7Fai &b/chunk help &7ottenere la lista di tutti i comandi disponibili."
+
+  Function-not-available: "&cFunziona attualmente non disponibile."
+  Function-not-available-missing-vault: "&cFunziona attualmente non disponibile a causa della mancanza di Vault!"
+
+  Claims-disabled-world: "&cI claim sono disabilitati in questo mondo!"
+  Impossible-to-claim-chunk: "&cNon puoi claimare questo chunk!"
+  No-claimable-chunk-found: "&cNon ti trovi in nessun chunk claimabile!"
+
+  Insufficient-permissions-to-claim: "&cNon disponi dei permessi necessari per claimare un plot!"
+  Max-claims-reached: "&cHai raggiunto il numero massimo di claim!"
+  Chunk-already-claimed: "&cQuesto chunk è già claimato!"
+  Insufficient-balance-to-claim: "&cNon hai abbastanza soldi per claimare questo chunk!"
+
+  Unclaimed-chunk: "&cQuesto chunk non è stato claimato da nessuno!"
+
+  Chunk-sold: "&e%buyer% &7ha comprato il tuo chunk a &e%sell_price%"
+  Chunk-claimed: |-
+    &8&l» &aChunk claimato con successo!
+    &8&l» &7Fai &b/chunk manage &7per gestire questo chunk.
+    &8&l» &7Per la lista degli altri comandi fai &b/chunk help&7.
+
+  Only-chunk-owner-can-sell: "&cSolo il proprietario del chunk può vendere questo chunk!"
+  Only-chunk-owner-can-unclaim: "§cSolo il proprietario del plot può unclaimare questo chunk!"
+
+  Missing-sell-price: "&7Inserisci il prezzo per cui vuoi vendere il chunk."
+
+  Chunk-sell-successful: |-
+    §8§l» &aHai messo il tuo chunk in vendità a &2%sell_price%
+    §8§l» §eFai §6/chunk unsell §eper togliere un chunk dalla vendità.
+    
+
+  Claimed-Chunk-Info:
+    - ""
+    - "  §3§l» §f§lINFORMAZIONI CHUNK"
+    - ""
+    - "     §b§lPosizione: §7%chunk_x%x, %chunk_z%z"
+    - "     §b§lProprietario: §7%chunk_claimer%"
+    - "     §b§lMembri: §7%chunk_members%"
+    - ""
+
+  UnClaimed-Chunk-Info:
+    - ""
+    - "  §3§l» §f§lINFORMAZIONI CHUNK"
+    - ""
+    - "     §b§lPosizione: §7%chunk_x%x, %chunk_z%z"
+    - "     §b§lProprietario: §7N/D"
+    - "     §b§lMembri: §7%chunk_members%"
+    - "  §3§o§lCHUNK NON CLAIMATO"
