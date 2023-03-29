@@ -13,7 +13,7 @@
 
     <build>
         <directory>../target</directory>
-        <finalName>itemstacklib-${project.version}</finalName>
+        <finalName>ATHChunkClaim-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

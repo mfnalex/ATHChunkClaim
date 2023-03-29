@@ -124,6 +124,17 @@
         </dependency>
 
         <dependency>
+            <groupId>me.gurwi</groupId>
+            <artifactId>worldguard7</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>me.gurwi</groupId>
+            <artifactId>worldguard6</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.26</version>
