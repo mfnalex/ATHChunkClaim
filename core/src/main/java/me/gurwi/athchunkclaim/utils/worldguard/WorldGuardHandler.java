@@ -1,9 +1,10 @@
 package me.gurwi.athchunkclaim.utils.worldguard;
 
 import me.gurwi.athchunkclaim.ATHChunkClaim;
+import me.gurwi.worldguard6.WorldGuard6API;
+import me.gurwi.worldguard7.WorldGuard7API;
 import org.bukkit.Bukkit;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,9 +32,9 @@ public class WorldGuardHandler {
         }
 
         if (serverVer.equals("v1_12_R1")) {
-            worldGuardManager = new WorldGuardAPI_Legacy();
+            worldGuardManager = new WorldGuard6API();
         } else {
-            worldGuardManager = new WorldGuardAPI_NL();
+            worldGuardManager = new WorldGuard7API();
         }
         worldGuardLoaded = true;
         ATHChunkClaim.getInstance().getLogger().info("§2[WorldGuard] §2§l§o INFO §r §aWorldGuard for version §f" + serverVer + " §awas loaded successfully.");

@@ -4,7 +4,6 @@ import me.gurwi.athchunkclaim.ATHChunkClaim;
 import me.gurwi.athchunkclaim.objects.PlayerChunk;
 import me.gurwi.athchunkclaim.utils.APIManager;
 import me.gurwi.athchunkclaim.config.ConfigHandler;
-import me.gurwi.athchunkclaim.utils.worldguard.WorldGuardAPI_Legacy;
 import me.gurwi.athchunkclaim.utils.worldguard.WorldGuardHandler;
 import org.bukkit.*;
 import org.bukkit.configuration.file.YamlConfiguration;

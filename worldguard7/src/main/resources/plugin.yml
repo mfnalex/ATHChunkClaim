@@ -1,0 +1,3 @@
+name: worldguard7
+version: '${project.version}'
+main: me.gurwi.worldguard7.Worldguard7

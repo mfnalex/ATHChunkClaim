@@ -1,11 +1,12 @@
-package me.gurwi.athchunkclaim.utils.worldguard;
+package me.gurwi.worldguard6;
 
 import com.sk89q.worldguard.bukkit.WGBukkit;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
+import me.gurwi.athchunkclaim.utils.worldguard.WorldGuardManager;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
-public class WorldGuardAPI_Legacy implements WorldGuardManager {
+public final class WorldGuard6API implements WorldGuardManager {
 
     public String getPlayerRegion(Player player) {
 
