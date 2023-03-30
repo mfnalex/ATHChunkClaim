@@ -1,6 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>me.gurwi</groupId>
     <artifactId>ATHChunkClaim-dist</artifactId>
     <version>1.2</version>
     <packaging>jar</packaging>
@@ -12,26 +11,41 @@
     </parent>
 
     <build>
-        <directory>../target</directory>
-        <finalName>ATHChunkClaim-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.1.1</version>
+                <version>3.3.0</version>
+                <configuration>
+                    <relocations>
+                        <relocation>
+                            <pattern>dev.triumphteam.gui</pattern>
+                            <shadedPattern>me.gurwi.athchunkclaim.guishandler</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.cryptomorin.xseries</pattern>
+                            <shadedPattern>me.gurwi.athchunkclaim.xseries</shadedPattern>
+                        </relocation>
+                    </relocations>
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>com/cryptomorin/xseries/XBiome*</exclude>
+                                <exclude>com/cryptomorin/xseries/NMSExtras*</exclude>
+                                <exclude>com/cryptomorin/xseries/NoteBlockMusic*</exclude>
+                                <exclude>com/cryptomorin/xseries/SkullCacheListener*</exclude>
+                                <exclude>com/cryptomorin/xseries/XSounds</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
                 <executions>
                     <execution>
                         <phase>package</phase>
                         <goals>
                             <goal>shade</goal>
                         </goals>
-                        <configuration>
-                            <artifactSet>
-                                <includes>
-                                    <include>me.gurwi:athchunkclaim-*</include>
-                                </includes>
-                            </artifactSet>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -53,6 +67,11 @@
         <dependency>
             <groupId>me.gurwi</groupId>
             <artifactId>worldguard6</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>me.gurwi</groupId>
+            <artifactId>ATHChunkClaim-bridge</artifactId>
             <version>1.0</version>
         </dependency>
 
